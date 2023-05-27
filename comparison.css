@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --black:#161b22;
+    --gray-border:#57606a;
+    --gray-btn:#f6f8fa ;
+    --blue:#0969da;
+    --icons:#656d76;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ---------navBar------------- */
+nav{
+background-color: var(--black);
+color: #ffffff;
+display: flex;
+justify-content: space-between;
+padding:20px 30px 30px 30px;
+height: 1.7vh;
+}
+
+li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.first-section-navbar ul{
+    display: flex;
+    gap: 15px;
+}
+#searchBar,#searchBar2{
+    background-color: white;
+    border:1px solid white;
+    height: 2.8vh;
+    width: 17vw;
+    outline: white;
+}
+.search-container{
+    display: flex;
+    border: 1px solid var(--gray-border);
+    border-radius: 7px;
+    gap: 10px;
+    padding:3px;
+}
+.backslash{
+    margin-top: 2px;
+    margin-right: 5px;
+}
+.second-section-navbar ul{
+    display: flex;
+    gap: 18px;
+}
+.small-profilepic{
+    height:20px;
+    width:20px ;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+/* ---------navBar------------- */
+
+
+/* ----------categories--------- */
+section ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+section{
+    border-bottom: 1px solid #d7dde3;
+}
+
+.icons-centered{
+    display: flex;
+}
+/* ----------categories--------- */
+
+
+/* ---------comparison part------------ */
+#name1,#name2{
+    color: #161b22;
+}
+.all-content{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+    height: 50vh;
+}
+#btn1,#btn2{
+    background-color: white;
+    border: none;
+}
+
+.first-competitor{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+img{
+    height:250px;
+    width: 250px;
+    border-radius: 100%;
+    border: 1px solid #d4d5d7;
+}
+.second-competitor{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 50px;
+}
+#done{
+    text-align: center;
+}
+.btn3{
+    display: flex;
+    justify-content: center;
+    
+
+}
+/* ---------comparison part------------ */
+
+
+/* -------------footer------------- */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 2.5rem 8rem 2rem 8rem;
+    border-top: 1px solid #d7dde3;
+}
+.first-part-footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    color: var(--icons);
+    font-size: 13px;  
+}
+.second-part-footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:50px;
+    font-size: 13px;
+    color: var(--blue);
+
+}
+/* -------------footer------------- */
+@media screen and (max-width: 485px) {
+    footer{
+        display: none;
+    }
+    .deadlink{
+        display: none;
+    }
+    #nav1,#nav2,#nav3{
+        display: none;
+    }
+    nav{
+        flex-wrap: nowrap;
+    }
+    #nav4{
+        margin-top: 10px;
+        gap: 5px;
+        margin-left: 8px;
+    }
+    .small-profilepic{
+        margin-right: 0;
+    }
+    section ul{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        font-size: 10px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .all-content{
+        flex-wrap: wrap;
+        gap: 10rem;
+    }
+    #searchBar, #searchBar2 {
+        width: 42vw;
+    }
+}
